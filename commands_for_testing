@@ -1,0 +1,9 @@
+gcc main.c -o test1
+./test1 -name output.txt -input /home/ed/D6.txt -match 3 -mismatch 1 -gap 1
+
+gcc -fopenmp main.c
+export OMP_NUM_THREADS=4
+./a.out -name output.txt -input /home/ed/D7.txt -match 3 -mismatch 1 -gap 1
+
+
+
